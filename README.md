@@ -1,7 +1,7 @@
-[![DOI](https://zenodo.org/badge/122105084.svg)](https://zenodo.org/badge/latestdoi/122105084)
 
-# Sign-Language
-A very simple CNN project.
+
+# Speechless hand gestures-Language
+CNN project for handicapped people.
 
 ## Note
 Simple-OpenCV-Calculator and this project are merged to one. Simple-OpenCV-Calculator will no longer be maintained.
@@ -43,7 +43,6 @@ Watch it <a href="https://youtu.be/JNZ7oFaH1fg">here</a>.
 Before using this repo, let me warn about something. You will have no interactive interface that will tell you what to do. So you will have to figure out most of the stuff by yourself and also make some changes to the scripts if the needs arise. But here is a basic gist.
 
 ### Creating a gesture 
-  0. Watch the video guide for setting the hand histogram <a href='https://youtu.be/KYfBLeYDMW4'>here</a>.
   1. First set your hand histogram. You do not need to do it again if you have already done it. But you do need to do it if the lighting conditions change. To do so type the command given below and follow the instructions below.
     
     python set_hand_hist.py
@@ -70,12 +69,7 @@ Before using this repo, let me warn about something. You will have no interactiv
   4. When you are done adding new gestures run the load_images.py file once. You do not need to run this file again until and unless you add a new gesture.
     
     python load_images.py
-
-### Displaying all gestures
-  1. To see all the gestures that are stored in 'gestures/' folder run this command
     
-    python display_all_gestures.py
-
 ### Training a model
   1. So training can be done with either Tensorflow or Keras. If you want to train using Tensorflow then run the cnn_tf.py file. If you want to train using Keras then use the cnn_keras.py file.
   
@@ -95,7 +89,6 @@ You do not need to retrain your model every time. In case you added or removed a
 ### Testing gestures
 Before going into much details I would like to tell that I was not able to use the model trained using tensorflow. That is because I do not know how to use it. I tried using the predict() function of the Estimator API but that loads the parameters into memory every time it is called which is a huge overhead. Please help me if you can with this. The functions for prediction using tf is tf_predict() which you will find in the recognize_gesture.py file but it is never used.
 This is why I ended up using Keras' model, as the loading the model into memory and using it for prediction is super easy.
-   1. First set your hand histogram. 0. Watch the video guide for setting the hand histogram <a href='https://youtu.be/KYfBLeYDMW4'>here</a>. You do not need to do it again if you have already done it. But you do need to do it if the lighting conditions change. To do so type the command given below and follow the instructions below.
     
     python set_hand_hist.py
 
@@ -144,7 +137,5 @@ Here is where you will have all the fun.
 
 
 # Got a question?
-If you have any questions that are bothering you please contact me on my <a href = "http://www.facebook.com/dibakar.saha.750">facebook profile</a>. Just do not ask me questions like where do I live, who do I work for etc. Also no questions like what does this line do. If you think a line is redundant or can be removed to make the program better then you can obviously ask me or make a pull request.
+If you have any questions that are bothering you please contact me on my <a href = "creator.shamse@gmail.com">Gmail</a>. Just do not ask me questions like where do I live, who do I work for etc. Also no questions like what does this line do. If you think a line is redundant or can be removed to make the program better then you can obviously ask me or make a pull request.
 
-# How to cite 
-Saha, D.. (2018, May 9). Sign-Language (Version 1). figshare. https://doi.org/10.6084/m9.figshare.6241901.v1A very simple CNN project.
